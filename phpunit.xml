@@ -1,0 +1,13 @@
+<phpunit bootstrap="tests/bootstrap.php" colors="true">
+    <php>
+        <env name="DB_HOST" value="mysql"/>
+        <env name="DB_DATABASE" value="php_app"/>
+        <env name="DB_USERNAME" value="phpuser"/>
+        <env name="DB_PASSWORD" value="phppassword"/>
+    </php>
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
